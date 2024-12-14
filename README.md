@@ -13,7 +13,7 @@ remotes::install_github("EddieLv/GPTCelltype")
 ```
 
 ##  🚀 Quick start with Seurat pipeline 
-
+## 按照下面代码跑通测试
 
 ```{r eval = FALSE}
 
