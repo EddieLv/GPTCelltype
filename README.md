@@ -4,7 +4,9 @@ GPTCelltype: Automatic cell type annotation with GPT-4
 ## Installation 
 
 To install the latest version of GPTCelltype package via Github, run the following commands in R:
+#不管你有没有安装过，重装以下两个包
 ```{r eval = FALSE}
+install.packages("remotes")
 remotes::install_github("EddieLv/openai")
 remotes::install_github("EddieLv/GPTCelltype")
 ```
@@ -16,6 +18,10 @@ remotes::install_github("EddieLv/GPTCelltype")
 
 #跟数信院客服领取独享key
 Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
+
+# 卸载加载的包
+detach("package:openai", unload = T)
+detach("package:GPTCelltype", unload = T)
 
 # Load packages
 library(GPTCelltype)
@@ -29,11 +35,6 @@ markers <- list("C0" = c("Ager", "Hopx", "Pdpn"))
 res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4o', mine_url="http://sxycloud.cn:3000")
 res
 
-# Assign cell type annotation back to Seurat object
-obj@meta.data$celltype <- as.factor(res[as.character(Idents(obj))])
-
-# Visualize cell type annotation on UMAP
-DimPlot(obj,group.by='celltype')
 ```
 
 ### ⚠️Warning: avoid sharing your API key with others or uploading it to public spaces.
