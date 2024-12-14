@@ -20,8 +20,8 @@ remotes::install_github("EddieLv/GPTCelltype")
 Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
 
 # 卸载加载的包
-detach("package:openai", unload = T)
 detach("package:GPTCelltype", unload = T)
+detach("package:openai", unload = T)
 
 # Load packages
 library(GPTCelltype)
