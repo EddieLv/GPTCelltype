@@ -24,7 +24,10 @@ library(openai)
 # Assume you have already run the Seurat pipeline https://satijalab.org/seurat/
 # "obj" is the Seurat object; "markers" is the output from FindAllMarkers(obj)
 # Cell type annotation by GPT-4
-res <- gptcelltype(markers, model = 'gpt-4', mine_url="http://sxycloud.cn:3000")
+# markers可以是一个list
+markers <- list("C0" = c("Ager", "Hopx", "Pdpn"))
+res <- gptcelltype(markers, tissuename = "lung, model = 'gpt-4o', mine_url="http://sxycloud.cn:3000")
+res
 
 # Assign cell type annotation back to Seurat object
 obj@meta.data$celltype <- as.factor(res[as.character(Idents(obj))])
