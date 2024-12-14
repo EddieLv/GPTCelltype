@@ -14,7 +14,7 @@ remotes::install_github("Winnie09/GPTCelltype")
 
 ```{r eval = FALSE}
 
-# IMPORTANT! Assign your OpenAI API key. See Vignette for details
+#跟数信院客服领取独享key
 Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
 
 # Load packages
@@ -34,29 +34,3 @@ DimPlot(obj,group.by='celltype')
 ```
 
 ### ⚠️Warning: avoid sharing your API key with others or uploading it to public spaces.
-
-## Vignette
-You can view the complete vignette [here](https://winnie09.github.io/Wenpin_Hou/pages/gptcelltype.html).
-
-## Trouble Shooting
-
-GPTCelltype software can be installed via Github in seconds. Users should have R > 3.5.x installed. R can be downloaded here: http://www.r-project.org/.
-
-For Windows users, Rtools is also required to be installed. Rtools can be downloaded here: (https://cloud.r-project.org/bin/windows/Rtools/). For R version 3.5.x, Rtools35.exe is recommended. Use default settings to perform the installation.
-
-For mac users, if there is any problem with installation problem, please try download and install clang-8.0.0.pkg from the following URL: https://cloud.r-project.org/bin/macosx/tools/clang-8.0.0.pkg
-
-For increased accuracy, you can supply optional tissuename as an argument "tissuename='your_tissue_name'" to gptcelltype.
-
-## Introduction
-Cell type annotation is an essential step in single-cell RNA-seq analysis. However, it is a time-consuming process that often requires expertise in collecting canonical marker genes and manually annotating cell types. Automated cell type annotation methods typically require the acquisition of high-quality reference datasets and the development of additional pipelines. We assessed the performance of GPT-4, a highly potent large language model, for cell type annotation, and demonstrated that it can automatically and accurately annotate cell types by utilizing marker gene information generated from standard single-cell RNA-seq analysis pipelines. Evaluated across hundreds of tissue types and cell types, GPT-4 generates cell type annotations exhibiting strong concordance with manual annotations and has the potential to considerably reduce the effort and expertise needed in cell type annotation. We also developed this software, **GPTCelltype**, an open-source R software package to facilitate cell type annotation by GPT-4.
-
-## Citation
-
-Hou, W. and Ji, Z., 2023. Reference-free and cost-effective automated cell type annotation with GPT-4 in single-cell RNA-seq analysis. [Nature Methods, 2024 March 25](https://link.springer.com/article/10.1038/s41592-024-02235-4?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240325&utm_content=10.1038/s41592-024-02235-4).
-
-## Contact
-
-Authors: Wenpin Hou (wh2526@cumc.columbia.edu), Zhicheng Ji (zhicheng.ji@duke.edu).
-
-Report bugs and provide suggestions by sending email to the maintainer Dr. Wenpin Hou (wh2526@cumc.columbia.edu) or open a new issue on this Github page. 
