@@ -26,7 +26,7 @@ library(openai)
 # Cell type annotation by GPT-4
 # markers可以是一个list
 markers <- list("C0" = c("Ager", "Hopx", "Pdpn"))
-res <- gptcelltype(markers, tissuename = "lung, model = 'gpt-4o', mine_url="http://sxycloud.cn:3000")
+res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4o', mine_url="http://sxycloud.cn:3000")
 res
 
 # Assign cell type annotation back to Seurat object
