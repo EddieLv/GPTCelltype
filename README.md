@@ -5,8 +5,8 @@ GPTCelltype: Automatic cell type annotation with GPT-4
 
 To install the latest version of GPTCelltype package via Github, run the following commands in R:
 ```{r eval = FALSE}
-install.packages("openai")
-remotes::install_github("Winnie09/GPTCelltype")
+remotes::install_github("EddieLv/openai")
+remotes::install_github("EddieLv/GPTCelltype")
 ```
 
 ##  🚀 Quick start with Seurat pipeline 
@@ -34,3 +34,4 @@ DimPlot(obj,group.by='celltype')
 ```
 
 ### ⚠️Warning: avoid sharing your API key with others or uploading it to public spaces.
+### ⚠️警告:不要把你的个人key分享给别人
