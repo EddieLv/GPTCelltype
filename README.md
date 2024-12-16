@@ -30,7 +30,7 @@ library(GPTCelltype)
 library(openai)
 
 #跟数信院客服领取独享key
-Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
+Sys.setenv(OPENAI_API_KEY = 'sk-XXXX')
 
 # Assume you have already run the Seurat pipeline https://satijalab.org/seurat/
 # Cell type annotation by GPT-4
