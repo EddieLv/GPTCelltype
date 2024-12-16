@@ -36,7 +36,7 @@ Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
 # Cell type annotation by GPT-4
 # markers是一个list, 也可以是Seurat FindAllMarkers()出来的结果
 markers <- list("C0" = c("Ager", "Hopx", "Pdpn")) # 这里的例子为了方便是一个自定义list
-res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4-turbo')
+res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4-turbo') # gpt-4-turbo很聪明，也可以替换成其他模型
 res
 
 ```
