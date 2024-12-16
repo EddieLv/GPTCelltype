@@ -6,8 +6,10 @@ GPTCelltype: Automatic cell type annotation with GPT-4
 To install the latest version of GPTCelltype package via Github, run the following commands in R:
 
 ## 取消加载的包(若已加载，否则跳过这步)
+```{r eval = FALSE}
 detach("package:GPTCelltype", unload = T)
 detach("package:openai", unload = T)
+```
 
 ## 卸载原有包(若已安装，否则跳过这步)
 remove.packages("GPTCelltype")
