@@ -5,6 +5,14 @@ GPTCelltype: Automatic cell type annotation with GPT-4
 
 To install the latest version of GPTCelltype package via Github, run the following commands in R:
 
+## 取消加载的包(若已加载，否则跳过这步)
+detach("package:GPTCelltype", unload = T)
+detach("package:openai", unload = T)
+
+## 卸载原有包(若已安装，否则跳过这步)
+remove.packages("GPTCelltype")
+remove.packages("openai")
+
 ## 不管你有没有安装过，重装以下两个包
 ```{r eval = FALSE}
 install.packages("remotes")
@@ -17,25 +25,16 @@ remotes::install_github("EddieLv/GPTCelltype")
 
 ```{r eval = FALSE}
 
-#跟数信院客服领取独享key
-Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
-
-# 取消加载的包
-detach("package:GPTCelltype", unload = T)
-detach("package:openai", unload = T)
-
-# 卸载原有包
-remove.packages("GPTCelltype")
-remove.packages("openai")
-
 # Load packages
 library(GPTCelltype)
 library(openai)
 
+#跟数信院客服领取独享key
+Sys.setenv(OPENAI_API_KEY = 'your_openai_API_key')
+
 # Assume you have already run the Seurat pipeline https://satijalab.org/seurat/
-# "obj" is the Seurat object; "markers" is the output from FindAllMarkers(obj)
 # Cell type annotation by GPT-4
-# markers可以是一个list
+# markers是一个list
 markers <- list("C0" = c("Ager", "Hopx", "Pdpn"))
 res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4-turbo')
 res
