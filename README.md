@@ -12,8 +12,10 @@ detach("package:openai", unload = T)
 ```
 
 ## 卸载原有包(若已安装，否则跳过这步)
+```{r eval = FALSE}
 remove.packages("GPTCelltype")
 remove.packages("openai")
+```
 
 ## 不管你有没有安装过，重装以下两个包
 ```{r eval = FALSE}
