@@ -20,8 +20,8 @@ remove.packages("openai")
 ## 不管你有没有安装过，重装以下两个包
 ```{r eval = FALSE}
 install.packages("remotes")
-remotes::install_github("EddieLv/openai")
-remotes::install_github("EddieLv/GPTCelltype")
+remotes::install_github("EddieLv/openai", force=T)
+remotes::install_github("EddieLv/GPTCelltype", force=T)
 ```
 
 ##  🚀 Quick start with Seurat pipeline 
