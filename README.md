@@ -5,23 +5,11 @@ GPTCelltype: Automatic cell type annotation with GPT-4
 
 To install the latest version of GPTCelltype package via Github, run the following commands in R:
 
-## 取消加载的包(若已加载，否则跳过这步)
-```{r eval = FALSE}
-detach("package:GPTCelltype", unload = T)
-detach("package:openai", unload = T)
-```
-
-## 卸载原有包(若已安装，否则跳过这步)
-```{r eval = FALSE}
-remove.packages("GPTCelltype")
-remove.packages("openai")
-```
-
 ## 不管你有没有安装过，重装以下两个包
 ```{r eval = FALSE}
 install.packages("remotes")
-remotes::install_github("EddieLv/openai", force=T)
-remotes::install_github("EddieLv/GPTCelltype", force=T)
+remotes::install_github("EddieLv/api_sxy", force=T)
+remotes::install_github("EddieLv/GPTCelltype_sxy", force=T)
 ```
 
 ##  🚀 Quick start with Seurat pipeline 
@@ -30,8 +18,8 @@ remotes::install_github("EddieLv/GPTCelltype", force=T)
 ```{r eval = FALSE}
 
 # Load packages
-library(GPTCelltype)
-library(openai)
+library(GPTCelltype_sxy)
+library(api_sxy)
 
 #跟数信院客服领取独享key
 Sys.setenv(OPENAI_API_KEY = 'sk-XXXX')
