@@ -1,7 +1,7 @@
 GPTCelltypeSXY: 
-
-基于GPT4模型对scRNA分群进行自动注释(国内网络可用)
 ====
+基于GPT4模型对scRNA分群进行自动注释(国内网络可用)
+
 ## 安装数信院GPT注释的两个包
 ```{r eval = FALSE}
 install.packages("remotes")
