@@ -27,6 +27,10 @@ res <- gptcelltype(markers, tissuename = "lung", model = 'gpt-4o') # 这里基�
 res
 ```
 
+##  示例过程(注意2处红线指出的地方，代表成功调用了函数)
+![image](https://github.com/user-attachments/assets/9a90bf0d-d1bd-4f5a-b73c-208f1cafa96f)
+
+
 ##  关于 GPTCelltypeSXY 包，这里有几个使用时的注意事项：
 1. 基于标记基因（Markers）注释
 GPTCelltypeSXY 包是基于标记基因（Markers）来进行细胞类型注释的。
