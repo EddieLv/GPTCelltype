@@ -9,7 +9,7 @@ To install the latest version of GPTCelltype package via Github, run the followi
 ```{r eval = FALSE}
 install.packages("remotes")
 remotes::install_github("EddieLv/apiSXY", force=T)
-remotes::install_github("EddieLv/GPTCelltype_sxy", force=T)
+remotes::install_github("EddieLv/GPTCelltypeSXY", force=T)
 ```
 
 ##  🚀 Quick start with Seurat pipeline 
@@ -18,8 +18,8 @@ remotes::install_github("EddieLv/GPTCelltype_sxy", force=T)
 ```{r eval = FALSE}
 
 # Load packages
-library(GPTCelltype_sxy)
-library(api_sxy)
+library(GPTCelltypeSXY)
+library(apiSXY)
 
 #跟数信院客服领取独享key
 Sys.setenv(OPENAI_API_KEY = 'sk-XXXX')
