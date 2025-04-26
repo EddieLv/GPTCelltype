@@ -8,7 +8,7 @@ To install the latest version of GPTCelltype package via Github, run the followi
 ## 安装数信院GPT注释的两个包
 ```{r eval = FALSE}
 install.packages("remotes")
-remotes::install_github("EddieLv/api_sxy", force=T)
+remotes::install_github("EddieLv/apiSXY", force=T)
 remotes::install_github("EddieLv/GPTCelltype_sxy", force=T)
 ```
 
