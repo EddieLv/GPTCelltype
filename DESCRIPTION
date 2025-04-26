@@ -1,4 +1,4 @@
-Package: GPTCelltype_sxy
+Package: GPTCelltypeSXY
 Type: Package
 Title: Reference-free and cost-effective automated cell type annotation
         with GPT-4 in single-cell RNA-seq analysis
