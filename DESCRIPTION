@@ -11,7 +11,7 @@ Encoding: UTF-8
 License: MIT
 RoxygenNote: 7.2.3
 VignetteBuilder: knitr
-Imports: openai
+Imports: apiSXY
 Suggests: knitr, rmarkdown, markdown
 Depends: R (>= 3.5.0)
 NeedsCompilation: no
