@@ -46,5 +46,9 @@ GPTCelltypeSXY 包基于特定的细胞类型数据库进行注释。
 
 使用时要确保选择适合你的数据集的细胞类型库。例如，不同物种、组织或实验条件下，可能需要不同的标注系统。确保数据集中的细胞类型与所使用的库相匹配，以避免误注释。
 
+##  个人令牌购买渠道(一般情况下50w token足够完成至少30次自动注释)
+![abdfd15ba9a012cb44e024d54619666](https://github.com/user-attachments/assets/47fe2f7b-97db-49f2-ab92-84d4ce4e9c4f)
+
+
 ### ⚠️Warning: avoid sharing your API key with others or uploading it to public spaces.
 ### ⚠️警告:不要把你的个人令牌分享给别人
