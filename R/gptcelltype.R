@@ -9,7 +9,7 @@
 #' @param openai_key The OpenAI key obtained from https://platform.openai.com/account/api-keys The default is NA, which will resulting outputing the prompt itself. If an actual key is provided, then the output will be the celltype annotations from the GPT model specified by the user. 
 #' @param model A valid GPT-4 or GPT-3.5 model name list on https://platform.openai.com/docs/models. Default is 'gpt-4-32k'.
 #' @param topgenenumber Number of top differential genes to be used if input is Seurat differential genes.
-#' @import openai
+#' @import apiSXY
 #' @export
 #' @return A vector of cell types when the user provide openai_key or the prompt itself when openai_key = NA (default)
 #' @author Wenpin Hou <wh2526@@cumc.columbia.edu>, Zhicheng Ji <zhicheng.ji@@duke.edu>
